@@ -50,7 +50,7 @@ class SnipsSmallTalk(object):
         print '[Received] intent: {}'.format(intent_message.intent.intent_name)
 
         # if need to speak the execution result by tts
-        hermes.publish_start_session_notification(intent_message.site_id, "ich kann nicht selbständig denken", "SnipsSmallTalkAPP")
+        hermes.publish_start_session_notification(intent_message.site_id, "Ich habe leider noch kein Bewusstsein", "SnipsSmallTalkAPP")
 
     # More callback function goes here...
 
