@@ -1,6 +1,7 @@
 import ConfigParser
 import io
 
+
 CONFIGURATION_ENCODING_FORMAT = "utf-8"
 
 class SnipsConfigParser(ConfigParser.SafeConfigParser):
