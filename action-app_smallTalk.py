@@ -52,7 +52,8 @@ class SnipsSmallTalk(object):
                 message = "Ganz gut! Meine Plantine ist " + cpu_temp + " Grad warm"
             else:
                 message = "Nicht so gut! Meine Platine ist " + cpu_temp + " Grad heiß. Kannst du da was machen?"
-       except :
+        
+        except :
             message = "Ich weiß nicht so genau. Ich konnte meine Temperatur nicht ermitteln"
     
         # if need to speak the execution result by tts
