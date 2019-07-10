@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from snipsTools import SnipsConfigParser
@@ -37,7 +37,7 @@ class SnipsSmallTalk(object):
         hermes.publish_end_session(intent_message.session_id, "")
         
         # action code goes here...
-        print '[Received] intent: {}'.format(intent_message.intent.intent_name)
+        print('[Received] intent: {}'.format(intent_message.intent.intent_name))
         
         # Read CPU temperature
         cpu_temp = os.popen("vcgencmd measure_temp").readline()
@@ -59,8 +59,8 @@ class SnipsSmallTalk(object):
         hermes.publish_end_session(intent_message.session_id, "")
 
         # action code goes here...
-        print '[Received] intent: {}'.format(intent_message.intent.intent_name)
-
+        print('[Received] intent: {}'.format(intent_message.intent.intent_name))
+        
         # if need to speak the execution result by tts
         hermes.publish_start_session_notification(intent_message.site_id, "Ich habe leider noch kein Bewusstsein", "SnipsSmallTalkAPP")
 
