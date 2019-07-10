@@ -40,18 +40,21 @@ class SnipsSmallTalk(object):
         # action code goes here...
         print('[Received] intent: {}'.format(intent_message.intent.intent_name))
         
-        # Read CPU temperature
-        cpu_temp = os.popen("vcgencmd measure_temp").readline()
-        cpu_temp = cpu_temp.replace("temp=", "")
-        cpu_temp = cpu_temp.replace("'C\n", "")
-        cpu_temp2 = float(cpu_temp)
-        
         message = "null"
-        if cpu_temp2 < 55:
-            message = "Ganz gut! Meine Plantine ist" + cpu_temp + "Grad warm"
-        else:
-            message = "Nicht so gut! Meine Platine ist" + cpu_temp + "Grad heiß. Kannst du da was machen?"
-       
+        try:
+            # Read CPU temperature
+            cpu_temp = os.popen("vcgencmd measure_temp").readline()
+            cpu_temp = cpu_temp.replace("temp=", "")
+            cpu_temp = cpu_temp.replace("'C\n", "")
+            cpu_temp2 = float(cpu_temp)
+        
+            if cpu_temp2 < 55:
+                message = "Ganz gut! Meine Plantine ist" + cpu_temp + "Grad warm"
+            else:
+                message = "Nicht so gut! Meine Platine ist" + cpu_temp + "Grad heiß. Kannst du da was machen?"
+       except :
+            message = "Ich weiß nicht so genau. Ich konnte meine Temperatur nicht ermitteln"
+    
         # if need to speak the execution result by tts
         hermes.publish_start_session_notification(intent_message.site_id, message, "SnipsSmallTalkAPP")
 
