@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#from snipsTools import SnipsConfigParser
+from snipsTools import SnipsConfigParser
 from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 import io
@@ -22,11 +22,11 @@ class SnipsSmallTalk(object):
     """
 
     def __init__(self):
-        # get the configuration if needed
-        #try:
-        #   self.config = SnipsConfigParser.read_configuration_file(CONFIG_INI)
-        #except :
-        #    self.config = None
+        #get the configuration if needed
+        try:
+           self.config = SnipsConfigParser.read_configuration_file(CONFIG_INI)
+        except :
+            self.config = None
 
         # start listening to MQTT
         self.start_blocking()
