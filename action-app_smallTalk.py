@@ -48,10 +48,10 @@ class SnipsSmallTalk(object):
             cpu_temp = cpu_temp.replace("'C\n", "")
             cpu_temp2 = float(cpu_temp)
         
-            if cpu_temp2 < 55:
-                message = "Ganz gut! Meine Plantine ist" + cpu_temp + "Grad warm"
+            if cpu_temp2 < 60:
+                message = "Ganz gut! Meine Plantine ist " + cpu_temp + " Grad warm"
             else:
-                message = "Nicht so gut! Meine Platine ist" + cpu_temp + "Grad heiß. Kannst du da was machen?"
+                message = "Nicht so gut! Meine Platine ist " + cpu_temp + " Grad heiß. Kannst du da was machen?"
        except :
             message = "Ich weiß nicht so genau. Ich konnte meine Temperatur nicht ermitteln"
     
