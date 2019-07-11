@@ -43,9 +43,7 @@ class SnipsSmallTalk(object):
         message = "null"
         try:
             # Read CPU temperature
-            cpu_temp = os.popen("vcgencmd measure_temp").readline()
-            cpu_temp = cpu_temp.replace("temp=", "")
-            cpu_temp = cpu_temp.replace("'C\n", "")
+            cpu_temp = os.popen("sh getcputemp.sh").readline()
             cpu_temp2 = float(cpu_temp)
         
             if cpu_temp2 < 60:
@@ -54,6 +52,7 @@ class SnipsSmallTalk(object):
                 message = "Nicht so gut! Meine Platine ist " + cpu_temp + " Grad heiß. Kannst du da was machen?"
         
         except :
+            print("Fehler bei der Ermittlung der cpu Temperatur \n Mögliche Ursachen:\n 1. Nutzer _snips-skills nicht in Rechtegruppe video\n 2. Skill wird nicht auf Raspberry ausgeführt")
             message = "Ich weiß nicht so genau. Ich konnte meine Temperatur nicht ermitteln"
     
         # if need to speak the execution result by tts
