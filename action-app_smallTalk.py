@@ -7,7 +7,6 @@ from hermes_python.ontology import *
 import io
 import os
 
-
 CONFIG_INI = "config.ini"
 
 # If this skill is supposed to run on the satellite,
