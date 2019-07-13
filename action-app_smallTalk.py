@@ -41,20 +41,21 @@ class SnipsSmallTalk(object):
         print('[Received] intent: {}'.format(intent_message.intent.intent_name))
         
         message = "null"
-        try:
-            # Read CPU temperature
-            cpu_temp = os.popen("sh getcputemp.sh").readline()
+        # Read CPU temperature
+        cpu_temp = os.popen("sh getcputemp.sh").readline()
+        
+        try: 
             cpu_temp2 = float(cpu_temp)
         
             if cpu_temp2 < 60:
-                message = "Ganz gut! Meine Plantine ist " + cpu_temp + " Grad warm"
+                message = 'Ganz gut! Mein Körper ist {} grad warm.'.format(cpu_temp)
             else:
-                message = "Nicht so gut! Meine Platine ist " + cpu_temp + " Grad heiß. Kannst du da was machen?"
+                message = 'Nicht so gut! Mein Körper ist {} Grad heiß. Kannst du da was machen?'.format(cpu_temp)
         
         except :
+            message = "Ich weiß nicht so genau. Ich konnte meine Temperatur nicht ermitteln."
             print("Fehler bei der Ermittlung der cpu Temperatur \n Mögliche Ursachen:\n 1. Nutzer _snips-skills nicht in Rechtegruppe video\n 2. Skill wird nicht auf Raspberry ausgeführt")
-            message = "Ich weiß nicht so genau. Ich konnte meine Temperatur nicht ermitteln"
-    
+
         # if need to speak the execution result by tts
         hermes.publish_start_session_notification(intent_message.site_id, message, "SnipsSmallTalkAPP")
 
