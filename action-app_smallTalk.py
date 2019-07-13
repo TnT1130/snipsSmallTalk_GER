@@ -9,17 +9,13 @@ import os
 
 CONFIG_INI = "config.ini"
 
-# If this skill is supposed to run on the satellite,
-# please get this mqtt connection info from <config.ini>
-# Hint: MQTT server is always running on the master device
 MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
 MQTT_ADDR = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 
 class SnipsSmallTalk(object):
-    """Class used to wrap action code with mqtt connection
-        
-        Please change the name refering to your application
+    """Action Code for the snips App "SmallTalk"
+       Smalltalk ist my first test app for snips and in the python prgramming language
     """
 
     def __init__(self):
@@ -66,8 +62,19 @@ class SnipsSmallTalk(object):
         # action code goes here...
         print('[Received] intent: {}'.format(intent_message.intent.intent_name))
         
+        message = "null"
+        topic = "null"
+        if len(intent_message.slots.topic) > 0:
+            topic = intent_message.slots.topic.first().value
+        
+        if topic == "Trump":
+            message = "Ich verstehe leider nicht viel von der Welt. Er wohl auch nicht."
+
+        if topic == "null"
+            message = "Ein Bewusstsein wurde leider noch nicht implementiert. Selbständiges denken klappt also nicht."
+
         # if need to speak the execution result by tts
-        hermes.publish_start_session_notification(intent_message.site_id, "Ich habe leider noch kein Bewusstsein", "SnipsSmallTalkAPP")
+        hermes.publish_start_session_notification(intent_message.site_id, message, "SnipsSmallTalkAPP")
 
     # More callback function goes here...
 
