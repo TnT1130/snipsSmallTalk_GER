@@ -70,7 +70,7 @@ class SnipsSmallTalk(object):
         if topic == "Trump":
             message = "Ich verstehe leider nicht viel von der Welt. Er wohl auch nicht."
 
-        if topic == "null"
+        if topic == "null":
             message = "Ein Bewusstsein wurde leider noch nicht implementiert. Selbständiges denken klappt also nicht."
 
         # if need to speak the execution result by tts
