@@ -64,11 +64,13 @@ class SnipsSmallTalk(object):
         
         message = "null"
         topic = "null"
+       
         if len(intent_message.slots.topic) > 0:
-            topic = intent_message.slots.topic.first().value
+            topic = str(intent_message.slots.topic.first().value)
+            print("Erkannter Topic Wert: " + topic)
         
         if topic == "Trump":
-            message = "Ich verstehe leider nicht viel von der Welt. Er wohl auch nicht."
+            message = "Ich halte mich aus politischen Diskussionen raus. Sollte er besser auch so machen."
 
         if topic == "null":
             message = "Ein Bewusstsein wurde leider noch nicht implementiert. Selbständiges denken klappt also nicht."
