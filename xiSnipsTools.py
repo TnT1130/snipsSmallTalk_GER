@@ -1,4 +1,5 @@
-# Entwurf
+import random
+
 class Personality:
     def __init__(self, language):
         self.language = language
@@ -13,7 +14,7 @@ class Personality:
                self.answerDict[key] = value
     
     def get_AnswerToTopic(self, topic):
-        return self.answerDict[topic]
-
-
-
+        answerList = self.answerDict[topic].split(";")
+        
+        return str(random.choice(answerList))
+        
