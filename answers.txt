@@ -1,6 +1,6 @@
 null:Ein Bewusstsein wurde leider noch nicht implementiert.
-Trump:sehr verwirrend;Brücken finde ich schöner als Mauern. 
+Tramp:sehr verwirrend;Brücken finde ich schöner als Mauern; Ich halte mich aus politischen Diskussionen raus. Sollte er besser auch so machen.
 Siri: Die mag Daten; Die mag Äpfel; kommt in seinem eigenen Ökosystem gut zurecht. Ich bin froh da recht frei zu sein.
 Assistant:Ich glaub der liebt Daten; Ich weiß nicht was da alles so im Backend geschieht. 
 Cortana:Die findet Daten richtig klasse; Microsoft hat dafür recht große Rechenzentren. Ich laufe auf einem Pei.
-Gesichtern:Da ich keine visuelle und keine haptische Sensorik besitze, kann ich dazu nicht viel sagen.; Ich kann nicht gucken; Ganz ehrlich! Das weiß ich nicht
+Gesichter:Da ich keine visuelle und keine haptische Sensorik besitze, kann ich dazu nicht viel sagen.; Ich kann nicht gucken; Ganz ehrlich! Das weiß ich nicht

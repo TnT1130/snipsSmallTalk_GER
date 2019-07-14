@@ -14,7 +14,12 @@ class Personality:
                self.answerDict[key] = value
     
     def get_AnswerToTopic(self, topic):
-        answerList = self.answerDict[topic].split(";")
+
+        try:
+            answerList = self.answerDict[topic].split(";")
+        
+        except:
+            return str(random.choice(self.answerDict["null"].split(";")))
         
         return str(random.choice(answerList))
         
