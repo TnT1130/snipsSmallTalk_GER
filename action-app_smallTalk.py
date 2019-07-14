@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from snipsTools import SnipsConfigParser
+from xiSnipsTools import Personality
 from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 import io
@@ -12,6 +13,8 @@ CONFIG_INI = "config.ini"
 MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
 MQTT_ADDR = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
+
+personality = None
 
 class SnipsSmallTalk(object):
     """Action Code for the snips App "SmallTalk"
@@ -65,7 +68,7 @@ class SnipsSmallTalk(object):
         message = "null"
         topic = "null"
        
-        if len(intent_message.slots.topic) > 0:
+        """if len(intent_message.slots.topic) > 0:
             topic = str(intent_message.slots.topic.first().value)
             print("Erkannter Topic Wert: " + topic)
         
@@ -74,6 +77,13 @@ class SnipsSmallTalk(object):
 
         if topic == "null":
             message = "Ein Bewusstsein wurde leider noch nicht implementiert. Selbständiges denken klappt also nicht."
+    	"""
+        if len(intent_message.slots.topic) > 0:
+            topic = str(intent_message.slots.topic.first().value)
+            print("Erkannter Topic Wert: " + topic)
+        
+        message = personality.get_AnswerToTopic(topic)
+        print(message)
 
         # if need to speak the execution result by tts
         hermes.publish_start_session_notification(intent_message.site_id, message, "SnipsSmallTalkAPP")
@@ -96,4 +106,5 @@ class SnipsSmallTalk(object):
             h.subscribe_intents(self.master_intent_callback).start()
 
 if __name__ == "__main__":
+    personality = Personality("de_DE")
     SnipsSmallTalk()
