@@ -14,7 +14,8 @@ MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
 MQTT_ADDR = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 
-personality = None
+wdyt_personality = None
+hay_personalitiy = None
 
 class SnipsSmallTalk(object):
     """Action Code for the snips App "SmallTalk"
@@ -43,16 +44,18 @@ class SnipsSmallTalk(object):
         # Read CPU temperature
         cpu_temp = os.popen("sh getcputemp.sh").readline()
         
+        message = "null"
+
         try: 
             cpu_temp2 = float(cpu_temp)
         
             if cpu_temp2 < 60:
-                message = 'Ganz gut! Mein Körper ist {} grad warm.'.format(cpu_temp)
+                message = hay_personality.get_AnswerToTopic("well").format(cpu_temp)
             else:
-                message = 'Nicht so gut! Mein Körper ist {} Grad heiß. Kannst du da was machen?'.format(cpu_temp)
+                message = hay_personality.get_AnswerToTopic("notwell").format(cpu_temp)
         
         except :
-            message = "Ich weiß nicht so genau. Ich konnte meine Temperatur nicht ermitteln."
+            message = hay_personality.get_AnswerToTopic("null")
             print("Fehler bei der Ermittlung der cpu Temperatur \n Mögliche Ursachen:\n 1. Nutzer _snips-skills nicht in Rechtegruppe video\n 2. Skill wird nicht auf Raspberry ausgeführt")
 
         # if need to speak the execution result by tts
@@ -72,7 +75,7 @@ class SnipsSmallTalk(object):
             topic = str(intent_message.slots.topic.first().value)
             print("Erkannter Topic Wert: " + topic)
         
-        message = personality.get_AnswerToTopic(topic)
+        message = wdyt_personality.get_AnswerToTopic(topic)
         print(message)
 
         # if need to speak the execution result by tts
@@ -96,5 +99,6 @@ class SnipsSmallTalk(object):
             h.subscribe_intents(self.master_intent_callback).start()
 
 if __name__ == "__main__":
-    personality = Personality("de_DE")
+    wdyt_personality = Personality("de_DE","howareyou")
+    hay_personality = Personality("de_DE","whatdoyouthink")
     SnipsSmallTalk()

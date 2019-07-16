@@ -1,0 +1,3 @@
+null:Ich weiß nicht so genau. Ich konnte meine Temperatur nicht ermitteln.;kann ich dir gar nicht so genau sagen. Vielleicht benötige ich mehr Rechte.; Ich kann meine Temperatur nicht ermitteln. Vielleicht musst du mein Skript auf die richtige Plattform anpassen?
+well:Ganz gut! Mein Körper ist {} grad warm.; Prima! Meine CPU Temperatur beträgt {} Grad; Läuft gut bei mir. {} Grad beträgt meine CPU Temperatur
+notwell:Nicht so gut! Mein Körper ist {} Grad heiß. Kannst du da was machen?; Mir ist etwas zu heiß. Meine CPU Temperatur beträgt {} Grad
