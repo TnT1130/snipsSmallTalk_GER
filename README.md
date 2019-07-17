@@ -7,16 +7,16 @@ Die App haucht Snips, durch verschiedene Easter-Eggs, etwas mehr Persönlichkeit
 
 ## Derzeit implementiert:
 
-- WhatDoYouThink:
--- Frage Snips nach einem Thema und sie gibt dir eine passende Antwort.
--- Beispiel: "Was denkst du über Siri?"
+####WhatDoYouThink:
+-Frage Snips nach einem Thema und sie gibt dir eine passende Antwort.
+-Beispiel: "Was denkst du über Siri?"
 
--HowAreYou: 
--- Frage Snips wie es ihr geht und sie gibt dir je nach CPU Temperatur eine passende Antwort
--- Beispiel: "Wie geht es dir?"
+####HowAreYou: 
+-Frage Snips wie es ihr geht und sie gibt dir je nach CPU Temperatur eine passende Antwort
+-Beispiel: "Wie geht es dir?"
 
-Hinweis zu HowAreYou: 
-- Funktioniert derzeit nur bei Raspberry Pi und setzt die Aufnahme des Users _snips-skills in die Rechtegruppe "video" voraus.
+-Hinweis zu HowAreYou: 
+Funktioniert derzeit nur bei Raspberry Pi und setzt die Aufnahme des Users _snips-skills in die Rechtegruppe "video" voraus.
 
 ## Installation
 
