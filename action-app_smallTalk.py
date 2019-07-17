@@ -99,6 +99,6 @@ class SnipsSmallTalk(object):
             h.subscribe_intents(self.master_intent_callback).start()
 
 if __name__ == "__main__":
-    wdyt_personality = Personality("de_DE","howareyou")
-    hay_personality = Personality("de_DE","whatdoyouthink")
+    wdyt_personality = Personality("de_DE","whatdoyouthink")
+    hay_personality = Personality("de_DE","howareyou")
     SnipsSmallTalk()
