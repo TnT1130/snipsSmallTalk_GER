@@ -7,11 +7,11 @@ Die App haucht Snips, durch verschiedene Easter-Eggs, etwas mehr Persönlichkeit
 
 ## Derzeit implementiert:
 
-####WhatDoYouThink:
+###WhatDoYouThink:
 -Frage Snips nach einem Thema und sie gibt dir eine passende Antwort.
 -Beispiel: "Was denkst du über Siri?"
 
-####HowAreYou: 
+###HowAreYou: 
 -Frage Snips wie es ihr geht und sie gibt dir je nach CPU Temperatur eine passende Antwort
 -Beispiel: "Wie geht es dir?"
 
