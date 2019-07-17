@@ -1,12 +1,12 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/snipsco/snips-app-template-py/blob/master/LICENSE)
 
-Snips-SmallTalk
+## Snips-SmallTalk
 
-Installation
+## Installation
 
 
 
-App Struktur
+## Struktur der App
 
 ```bash
 └── snips-app-template-py                                
