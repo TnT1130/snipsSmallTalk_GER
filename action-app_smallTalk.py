@@ -89,12 +89,9 @@ class SnipsSmallTalk(object):
         print('[Received] intent: {}'.format(intent_message.intent.intent_name))
         
         message = "null"
-        idiom = "null"
-        print("Erkannter Message Idiom Wert: " + str(intent_message.value))
-        if len(intent_message.slots.topic) > 0:
-            idiom = str(intent_message.slots.Idiom.first().value)
-            print("Erkannter Idiom Wert: " + idiom)
-        
+        idiom = str(intent_message.input)
+        print("Erkannter Message Idiom Wert: " + idiom)
+                
         message = ci_personality.get_AnswerToTopic(idiom)
         print(message)
 
