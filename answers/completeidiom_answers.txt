@@ -1,22 +1,22 @@
 null:ich habe keine Infos zu dieser Redewendung
-Alle laufen übern Friedhof:Außer Hagen, der wird getragen
-Sag mal Klettergerüst:Du hast einen nackten Mann geküsst
-Alle pissen in die Rinne:Außer Timmi, der sitzt drinne
-Wer anderen eine Grupe gräbt:Der hat ein Gruben grab Gerät;Der fällt vielleicht selbst hinein
-Wer anderen eine Bratwurst brät:Der hat ein Bratwurst brat Gerät
-Noch son Spruch:Kiefernbruch
-in diesem Sinne:Vogelspinne
-Noch son Käse:Zahnprotäse
-Noch son Ding:Augenring
-Wer anderen in die Möse beißt:Ist böse meist
-Brautkleid bleibt Brautkleit:Und Blaukraut bleibt Blaukraut
-Alles im Lot auf dem Boot?: Ja, es ist alles in Butter auf dem Kutter
-Alles im Lot aufm Boot?:Ja, alles in Butter aufm Kutter
-Alles in Butter auf dem Kutter?:Ja, es ist alles im Lot auf dem Boot!
-Alles in Butter aufm Kutter?:Ja, alles im Lot aufm Boot!
-Ene mene Miste:Es rappelt in der Kiste
-Wer frisst Popel?:Mopel!
-Fischers Fritz:Fischt frische Fische!
-Ene mene Mopel:Wer frisst Popel
-Frische Fische fischt Fischers Fritse:Fischers Fritz fischt frische Fische
-Fischers Fritz fischt frische Fische:Frische Fische fischt Fischers Fritze
+alle laufen übern friedhof:Außer Hagen, der wird getragen
+sag mal klettergerüst:Du hast einen nackten Mann geküsst
+alle pissen in die rinne:Außer Timmi, der sitzt drinne
+wer anderen eine grupe gräbt:Der hat ein Gruben grab Gerät;Der fällt vielleicht selbst hinein
+wer anderen eine bratwurst brät:Der hat ein Bratwurst brat Gerät
+noch son spruch:Kiefernbruch
+in diesem sinne:Vogelspinne
+noch son käse:Zahnprotäse
+noch son ding:Augenring
+wer anderen in die möse beißt:Ist böse meist
+brautkleid bleibt brautkleit:Und Blaukraut bleibt Blaukraut
+alles im lot auf dem boot?: Ja, es ist alles in Butter auf dem Kutter
+alles im lot aufm boot?:Ja, alles in Butter aufm Kutter
+alles in butter auf dem kutter?:Ja, es ist alles im Lot auf dem Boot!
+alles in butter aufm kutter?:Ja, alles im Lot aufm Boot!
+ene mene miste:Es rappelt in der Kiste
+wer frisst popel?:Mopel!
+fischers fritz:Fischt frische Fische!
+ene mene mopel:Wer frisst Popel
+frische fische fischt fischers fritse:Fischers Fritz fischt frische Fische
+fischers fritz fischt frische fische:Frische Fische fischt Fischers Fritze
