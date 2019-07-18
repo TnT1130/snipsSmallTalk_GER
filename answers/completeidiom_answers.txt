@@ -1,0 +1,12 @@
+null:ich habe keine Infos zu dieser Redewendung
+Brautkleid bleibt Brautkleit:Und Blaukraut bleibt Blaukraut
+Alles im Lot auf dem Boot?: Ja, es ist alles in Butter auf dem Kutter
+Alles im Lot aufm Boot?:Ja, alles in Butter aufm Kutter
+Alles in Butter auf dem Kutter?:Ja, es ist alles im Lot auf dem Boot!
+Alles in Butter aufm Kutter?:Ja, alles im Lot aufm Boot!
+Ene mene Miste:Es rappelt in der Kiste
+Wer frisst Popel?:Mopel!
+Fischers Fritz:Fischt frische Fische!
+Ene mene Mopel:Wer frisst Popel
+Frische Fische fischt Fischers Fritse:Fischers Fritz fischt frische Fische
+Fischers Fritz fischt frische Fische:Frische Fische fischt Fischers Fritze

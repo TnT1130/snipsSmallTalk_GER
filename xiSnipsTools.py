@@ -9,7 +9,7 @@ class Personality:
 
     def load_Answers(self, intent):
         #with open(lang + '/' + slotname + '/dict.txt') as fileobj:
-        with open(str(intent)+'_answers.txt') as fileobj:
+        with open('answers/'+str(intent)+'_answers.txt') as fileobj:
             for line in fileobj:
                key, value = line.split(":")
                self.answerDict[key] = value
@@ -20,8 +20,9 @@ class Personality:
             answerList = self.answerDict[topic].split(";")
         
         except:
+            print("Problem: konnte gesuchte Antwort zu Topic nicht finden. Topic: "+topic)
             return str(random.choice(self.answerDict["null"].split(";")))
-        
+            
         return str(random.choice(answerList))
     
     #Todo How can i read the default training data and then inject only the untrained entities?

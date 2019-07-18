@@ -81,7 +81,26 @@ class SnipsSmallTalk(object):
         # if need to speak the execution result by tts
         hermes.publish_start_session_notification(intent_message.site_id, message, "SnipsSmallTalkAPP")
 
-    # More callback function goes here...
+    def completeidiom_callback(self, hermes, intent_message):
+        # terminate the session first if not continue
+        hermes.publish_end_session(intent_message.session_id, "")
+
+        # action code goes here...
+        print('[Received] intent: {}'.format(intent_message.intent.intent_name))
+        
+        message = "null"
+        idiom = "null"
+       
+        if len(intent_message.slots.topic) > 0:
+            idiom = str(intent_message.slots.idiom.first().value)
+            print("Erkannter Idiom Wert: " + idiom)
+        
+        message = ci_personality.get_AnswerToTopic(idiom)
+        print(message)
+
+        # if need to speak the execution result by tts
+        hermes.publish_start_session_notification(intent_message.site_id, message, "SnipsSmallTalkAPP")
+
 
     # --> Master callback function, triggered everytime an intent is recognized
     def master_intent_callback(self,hermes, intent_message):
@@ -90,6 +109,8 @@ class SnipsSmallTalk(object):
             self.howareyou_callback(hermes, intent_message)
         if coming_intent == 'xion:whatdoyouthink':
             self.whatdoyouthink_callback(hermes, intent_message)
+        if coming_intent == 'xion:completidiom':
+            self.completeidiom_callback(hermes, intent_message)
 
         # more callback and if condition goes here...
 
@@ -101,4 +122,5 @@ class SnipsSmallTalk(object):
 if __name__ == "__main__":
     wdyt_personality = Personality("de_DE","whatdoyouthink")
     hay_personality = Personality("de_DE","howareyou")
+    ci_personality = Personality("de_DE","completeidiom")
     SnipsSmallTalk()
