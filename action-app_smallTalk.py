@@ -109,10 +109,8 @@ class SnipsSmallTalk(object):
             self.howareyou_callback(hermes, intent_message)
         if coming_intent == 'xion:whatdoyouthink':
             self.whatdoyouthink_callback(hermes, intent_message)
-        if coming_intent == 'xion:completidiom':
+        if coming_intent == 'xion:completeIdiom':
             self.completeidiom_callback(hermes, intent_message)
-
-        # more callback and if condition goes here...
 
     # --> Register callback function and start MQTT
     def start_blocking(self):
