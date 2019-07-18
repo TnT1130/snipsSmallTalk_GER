@@ -2,9 +2,9 @@ null:ich habe die Redewendung nicht gefunden
 alle laufen übern friedhof:Außer Hagen, der wird getragen
 sag mal klettergerüst:Du hast einen nackten Mann geküsst
 alle pissen in die rinne:Außer Timmi, der sitzt drinne
-wer anderen eine grupe gräbt:Der hat ein Gruben grab Gerät;Der fällt vielleicht selbst hinein
+wer anderen eine grube gräbt:Der hat ein Gruben grab Gerät;Der fällt vielleicht selbst hinein
 wer anderen eine bratwurst brät:Der hat ein Bratwurst brat Gerät
-noch son spruch:Kiefernbruch
+noch son spruch:Kieferbruch
 in diesem sinne:Vogelspinne
 noch son käse:Zahnprotäse
 noch son ding:Augenring
@@ -18,5 +18,5 @@ ene mene miste:Es rappelt in der Kiste; Da liegt wohl jemand in der Kiste
 wer frisst popel:Mopel!
 fischers fritz:Fischt frische Fische!
 ene mene mopel:Wer frisst Pohpel; da fährt wohl jemand Opel
-frische fische fischt fischers fritse:Fischers Fritz fischt frische Fische
+frische fische fischt fischers fritz:Fischers Fritz fischt frische Fische
 fischers fritz fischt frische fische:Frische Fische fischt Fischers Fritze
