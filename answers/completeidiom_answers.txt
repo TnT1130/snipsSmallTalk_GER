@@ -9,14 +9,14 @@ in diesem sinne:Vogelspinne
 noch son käse:Zahnprotäse
 noch son ding:Augenring
 wer anderen in die möse beißt:Ist böse meist
-brautkleid bleibt brautkleit:Und Blaukraut bleibt Blaukraut
-alles im lot auf dem boot?: Ja, es ist alles in Butter auf dem Kutter
-alles im lot aufm boot?:Ja, alles in Butter aufm Kutter
-alles in butter auf dem kutter?:Ja, es ist alles im Lot auf dem Boot!
-alles in butter aufm kutter?:Ja, alles im Lot aufm Boot!
-ene mene miste:Es rappelt in der Kiste
-wer frisst popel?:Mopel!
+brautkleid bleibt brautkleid:Und Blaukraut bleibt Blaukraut
+alles im lot auf dem boot: Ja, es ist alles in Butter auf dem Kutter
+alles im lot aufm boot:Ja, alles in Butter aufm Kutter
+alles in butter auf dem kutter:Ja, es ist alles im Lot auf dem Boot!
+alles in butter aufm kutter:Ja, alles im Lot aufm Boot!
+ene mene miste:Es rappelt in der Kiste; Da liegt wohl jemand in der Kiste
+wer frisst popel:Mopel!
 fischers fritz:Fischt frische Fische!
-ene mene mopel:Wer frisst Popel
+ene mene mopel:Wer frisst Popel; da fährt wohl jemand Opel
 frische fische fischt fischers fritse:Fischers Fritz fischt frische Fische
 fischers fritz fischt frische fische:Frische Fische fischt Fischers Fritze
