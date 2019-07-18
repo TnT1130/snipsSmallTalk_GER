@@ -90,7 +90,7 @@ class SnipsSmallTalk(object):
         
         message = "null"
         idiom = "null"
-       
+        print("Erkannter Message Idiom Wert: " + str(intent_message.value))
         if len(intent_message.slots.topic) > 0:
             idiom = str(intent_message.slots.Idiom.first().value)
             print("Erkannter Idiom Wert: " + idiom)
