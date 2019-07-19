@@ -1,9 +1,10 @@
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/snipsco/snips-app-template-py/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xinQuon/snipsSmallTalk_GER/blob/master/LICENSE)
 
 ## Snips-SmallTalk
 Dies ist meine Erste Snips App und meine ersten Gehversuche in Python.
 
 Die App haucht Snips, durch verschiedene Easter-Eggs, etwas mehr Persönlichkeit ein und lässt sich ohne Programmieraufwand über Textdateien an die jeweiligen Bedürfnisse anpassen.
+Um zu sehen, was ihr alles fragen könnt, schaut einfach in die Textdateien unter dem Ordner "answers".
 
 ## Installation
 Einfache Installation über den SnipsStore (im Moment nur deutscher Store).
