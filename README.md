@@ -1,4 +1,4 @@
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xinQuon/snipsSmallTalk_GER/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xinQuon/snipsSmallTalk_GER/blob/master/LICENSE)
 
 ## Snips-SmallTalk
 Dies ist meine Erste Snips App und meine ersten Gehversuche in Python.
