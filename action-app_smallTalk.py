@@ -109,12 +109,11 @@ class SnipsSmallTalk(object):
         category = "null"
         if len(intent_message.slots.topic) > 0:
             category = str(intent_message.slots.topic.first().value)
-            print("Erkannter Topic Wert: " + category)
-            message = tmaj_personality.get_RandomContent()
-        else:
             message = tmaj_personality.get_AnswerToTopic(category)
+           
+        else:
+            message = tmaj_personality.get_RandomContent()
 
-       
         print("Erkannte Witz Kategorie: " + category)
         
         print(message)
