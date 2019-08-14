@@ -107,8 +107,8 @@ class SnipsSmallTalk(object):
         
         message = "null"
         category = "null"
-        if len(intent_message.slots.topic) > 0:
-            category = str(intent_message.slots.topic.first().value)
+        if len(intent_message.slots.category) > 0:
+            category = str(intent_message.slots.category.first().value)
             message = tmaj_personality.get_AnswerToTopic(category)
            
         else:
