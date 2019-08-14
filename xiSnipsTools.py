@@ -25,6 +25,11 @@ class Personality:
             
         return str(random.choice(answerList))
     
+    def get_RandomContent(self):
+        # muss getestet werden
+        return str(random.choice(random.choice(list(self.answerDict.values())).split(";")))
+
+
     #Todo How can i read the default training data and then inject only the untrained entities?
     """def inject_Entities(self, entities):
          self.hermes.request_injection(InjectionRequestMessage([
