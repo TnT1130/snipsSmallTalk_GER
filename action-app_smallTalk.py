@@ -141,6 +141,11 @@ class SnipsSmallTalk(object):
     # --> Register callback function and start MQTT
     def start_blocking(self):
         snips_config = toml.load('/etc/snips.toml')
+
+        mqtt_username = None
+        mqtt_password = None
+        mqtt_broker_address = "localhost:1883"
+        
         if 'mqtt' in snips_config['snips-common'].keys():
           MQTT_BROKER_ADDRESS = snips_config['snips-common']['mqtt']
         if 'mqtt_username' in snips_config['snips-common'].keys():
