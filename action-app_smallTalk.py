@@ -7,6 +7,7 @@ from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 import io
 import os
+import toml
 
 CONFIG_INI = "config.ini"
 
