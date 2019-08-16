@@ -147,13 +147,13 @@ class SnipsSmallTalk(object):
         mqtt_broker_address = "localhost:1883"
         
         if 'mqtt' in snips_config['snips-common'].keys():
-          MQTT_BROKER_ADDRESS = snips_config['snips-common']['mqtt']
+            mqtt_broker_address = snips_config['snips-common']['mqtt']
         if 'mqtt_username' in snips_config['snips-common'].keys():
-          MQTT_USERNAME = snips_config['snips-common']['mqtt_username']
+            mqtt_username = snips_config['snips-common']['mqtt_username']
         if 'mqtt_password' in snips_config['snips-common'].keys():
-          MQTT_PASSWORD = snips_config['snips-common']['mqtt_password']
+            mqtt_password = snips_config['snips-common']['mqtt_password']
 
-        mqtt_opts = MqttOptions(username=MQTT_USERNAME, password=MQTT_PASSWORD, broker_address=MQTT_BROKER_ADDRESS)
+        mqtt_opts = MqttOptions(username=mqtt_username, password=mqtt_password, broker_address=mqtt_broker_address)
         with Hermes(mqtt_options=mqtt_opts) as h:
             h.subscribe_intents(self.master_intent_callback).start()
 
