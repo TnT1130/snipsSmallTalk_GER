@@ -158,8 +158,8 @@ class SnipsSmallTalk(object):
         mqtt_opts = MqttOptions(username=mqtt_username, password=mqtt_password, broker_address=mqtt_broker_address)
         self.hermes = Hermes(mqtt_options=mqtt_opts)
                 
-        with open('sounds/jokes/badumts_extreme.wav', 'rb') as f:
-            self.hermes.register_sound(RegisterSoundMessage("test", f.read()))
+        #with open('sounds/jokes/badumts_extreme.wav', 'rb') as f:
+        #    self.hermes.register_sound(RegisterSoundMessage("test", f.read()))
 
         self.hermes.subscribe_intents(self.master_intent_callback).start()
 
