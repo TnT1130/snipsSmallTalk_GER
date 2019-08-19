@@ -1,6 +1,5 @@
 import random
-from hermes_python.hermes import Hermes
-from hermes_python.ontology.tts import RegisterSoundMessage
+
 
 #from hermes_python.ontology.injection import InjectionRequestMessage, AddFromVanillaInjectionRequest
 
@@ -9,7 +8,7 @@ class Personality:
         self.language = language
         self.answerDict = {}
         self.load_Answers(intent)
-        self.registerSounds()
+        self.getSoundNames
 
     def load_Answers(self, intent):
         #with open(lang + '/' + slotname + '/dict.txt') as fileobj:
@@ -34,10 +33,9 @@ class Personality:
         return str(random.choice(random.choice(list(self.answerDict.values())).split(";")))
     
 
-    def registerSounds(self):
+    def getSoundNames(self):
         #todo: sound Ordner rekursiv nach dateinamen mit .wav durchsuchen und alle registrieren. Wenn kein Ordner oder Dateien, dann abbrechen
-        with open('sounds/jokes/badumts_extreme.wav', 'rb') as f:
-            self.hermes.register_sound(RegisterSoundMessage("test", f.read()))
+        
 
     #Todo How can i read the default training data and then inject only the untrained entities?
     """def inject_Entities(self, entities):
