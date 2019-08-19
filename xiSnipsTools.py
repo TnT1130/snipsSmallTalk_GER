@@ -32,4 +32,4 @@ class Personality:
 
     def getSoundNames(self):
         #todo: sound Ordner rekursiv nach dateinamen mit .wav durchsuchen und alle registrieren. Wenn kein Ordner oder Dateien, dann abbrechen
-
+        return
