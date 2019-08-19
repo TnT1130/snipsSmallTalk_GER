@@ -156,12 +156,15 @@ class SnipsSmallTalk(object):
             mqtt_password = snips_config['snips-common']['mqtt_password']
 
         mqtt_opts = MqttOptions(username=mqtt_username, password=mqtt_password, broker_address=mqtt_broker_address)
-        self.hermes = Hermes(mqtt_options=mqtt_opts)
-                
-        #with open('sounds/jokes/badumts_extreme.wav', 'rb') as f:
+        
+        #self.hermes = Hermes(mqtt_options=mqtt_opts)
+         #with open('sounds/jokes/badumts_extreme.wav', 'rb') as f:
         #    self.hermes.register_sound(RegisterSoundMessage("test", f.read()))
 
-        self.hermes.subscribe_intents(self.master_intent_callback).start()
+        #self.hermes.subscribe_intents(self.master_intent_callback).start()
+
+        with Hermes(mqtt_options=mqtt_opts) as h:
+            h.subscribe_intents(self.master_intent_callback).start()
 
 if __name__ == "__main__":
     wdyt_personality = Personality("de_DE","whatdoyouthink")
