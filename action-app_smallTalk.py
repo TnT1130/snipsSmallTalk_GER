@@ -123,6 +123,7 @@ class SnipsSmallTalk(object):
 
         # if need to speak the execution result by tts
         hermes.publish_start_session_notification(intent_message.site_id, message, "SnipsSmallTalkAPP")
+        hermes.publish_end_session(intent_message.session_id, "[[sound:test]]")
 
  
 
