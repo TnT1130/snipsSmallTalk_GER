@@ -8,7 +8,7 @@ class Personality:
         self.language = language
         self.answerDict = {}
         self.load_Answers(intent)
-        self.getSoundNames
+        self.getSoundNames()
 
     def load_Answers(self, intent):
         #with open(lang + '/' + slotname + '/dict.txt') as fileobj:
