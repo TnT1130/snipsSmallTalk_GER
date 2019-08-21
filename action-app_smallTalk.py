@@ -161,7 +161,7 @@ class SnipsSmallTalk(object):
          #with open('sounds/jokes/badumts_extreme.wav', 'rb') as f:
         #    self.hermes.register_sound(RegisterSoundMessage("test", f.read()))
 
-        #self.hermes.subscribe_intents(self.master_intent_callback).start()
+        #todo dieser Aufruf führt zu segmentation fault fehler 139 self.hermes.subscribe_intents(self.master_intent_callback).start()
 
         with Hermes(mqtt_options=mqtt_opts) as h:
             h.subscribe_intents(self.master_intent_callback).start()
